@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NovoHorizonteDigital.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e90eadf271c544a820a70fe4ae90a5297c6ecea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+112d84a10cd82883f4bf0fdb929ff61d1646888a")]
 [assembly: System.Reflection.AssemblyProductAttribute("NovoHorizonteDigital.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NovoHorizonteDigital.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

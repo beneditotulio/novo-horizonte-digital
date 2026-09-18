@@ -6,8 +6,8 @@ namespace NovoHorizonteDigital.API.Data
     {
         public static void Initialize(ApplicationDbContext context)
         {
-            // Create database if not exists
-            context.Database.EnsureCreated();
+            // Note: Database is created/updated via Migrate() in Program.cs,
+            // do NOT call EnsureCreated() here as it conflicts with migrations.
 
             // Check if data already exists
             if (context.Users.Any())

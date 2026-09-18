@@ -5,7 +5,7 @@ using System.Text;
 using NovoHorizonteDigital.API.Data;
 using NovoHorizonteDigital.API.Services;
 
-var builder = WebApplicationBuilder.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services
 builder.Services.AddControllers();

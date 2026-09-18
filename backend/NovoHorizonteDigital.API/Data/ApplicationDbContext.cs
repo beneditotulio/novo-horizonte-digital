@@ -104,6 +104,31 @@ namespace NovoHorizonteDigital.API.Data
             modelBuilder.Entity<Contract>()
                 .HasIndex(c => c.ContractCode)
                 .IsUnique();
+
+            // Decimal precision for currency values (Meticais)
+            modelBuilder.Entity<Area>()
+                .Property(a => a.AdhesionValue)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<Area>()
+                .Property(a => a.MonthlyInstallment)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<Contract>()
+                .Property(c => c.TotalAdhesionValue)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<Contract>()
+                .Property(c => c.TotalInstallmentValue)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<MonthlyPayment>()
+                .Property(mp => mp.ExpectedValue)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<MonthlyPayment>()
+                .Property(mp => mp.PaidValue)
+                .HasPrecision(18, 2);
         }
     }
 }

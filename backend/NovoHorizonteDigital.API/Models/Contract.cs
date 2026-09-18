@@ -24,7 +24,7 @@ namespace NovoHorizonteDigital.API.Models
 
         // Navigation
         public ICollection<ContractPlot> ContractPlots { get; set; } = new List<ContractPlot>();
-        public ICollection<Monthly Payment> MonthlyPayments { get; set; } = new List<MonthlyPayment>();
+        public ICollection<MonthlyPayment> MonthlyPayments { get; set; } = new List<MonthlyPayment>();
         public AlternativeContact AlternativeContact { get; set; }
     }
 
